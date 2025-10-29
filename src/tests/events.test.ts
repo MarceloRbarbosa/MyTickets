@@ -1,6 +1,6 @@
 import supertest from "supertest";
 import app from "../index"
-import { cleanDb, createEvent, generatedTicketData } from "./factories/tickets.factory";
+import { cleanDb, createEvent } from "./factories/tickets.factory";
 import httpStatus from "http-status";
 import { generatedEventData } from "./factories/event.factory";
 
@@ -64,8 +64,6 @@ describe("CRUD events", () => {
         .put(`/events/${event.id}`)
         .send(generatedEventData());
 
-       
-        console.log(body)
         expect(status).toBe(httpStatus.OK);
     });
 
