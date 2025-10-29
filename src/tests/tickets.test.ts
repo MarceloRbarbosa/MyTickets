@@ -2,7 +2,7 @@ import supertest from "supertest";
 import app from "../index";
 import { cleanDb, createEvent, createTicket, generatedTicketData} from "./factories/tickets.factory";
 import httpStatus from "http-status";
-import { date, object } from "joi";
+
 
 const api = supertest(app)
 
