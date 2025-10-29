@@ -3,7 +3,7 @@ import app from "../index"
 import { cleanDb, createEvent, generatedTicketData } from "./factories/tickets.factory";
 import httpStatus from "http-status";
 import { generatedEventData } from "./factories/event.factory";
-import { create } from "domain";
+
 
 const api = supertest(app)
 
