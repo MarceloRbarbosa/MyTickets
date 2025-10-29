@@ -11,3 +11,11 @@ export function generatedEventData() {
         date: faker.date.future()
     }
 }
+
+export function eventExpiredData(){
+    return {
+        id: 1,
+        name: faker.lorem.word(),
+        date: faker.date.past()
+    }
+}
