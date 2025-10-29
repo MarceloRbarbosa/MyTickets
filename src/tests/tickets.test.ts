@@ -3,7 +3,6 @@ import app from "../index";
 import { cleanDb, createEvent, createTicket, generatedTicketData} from "./factories/tickets.factory";
 import httpStatus from "http-status";
 
-
 const api = supertest(app)
 
 describe("CRUD tickets", () => {
